@@ -38,7 +38,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - https://console.firebase.google.comにアクセスして新しいプロジェクトを作成する。  
   →「Authentication」を有効化する<br />
   →「Sign-in method」のタブをクリックして「メール/パスワード」と「Google」の認証を有効する。  
-- Webアプリのコンソール画面の歯車マークを押して、プロジェクトの設定からアプリのconfigをメモしておく。  
+- Webアプリのコンソール画面の歯車マークを押して、プロジェクトの設定からアプリのconfigをメモしておく。
+  <pre>
   // Your web app's Firebase configuration  
   const firebaseConfig = {  
     apiKey: "XXXXXXXXX",  
@@ -48,7 +49,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     messagingSenderId: "XXXXXXXXX",  
     appId: "XXXXXXXXX"  
   };
-
+  </pre>
+  
 ### "React環境におけるdeploy"
 - 自身の開発環境にfirebase SDKをインストールする
 
@@ -73,19 +75,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   
       npm install react-router-dom firebase   
 - firebaseで作成したアプリのconfig情報を.env内に記載しておく。<>内は各アプリの情報に書き換える
-<pre>
-      touch .env  
-     // .env  
-  REACT_APP_FIREBASE_KEY=<apiKey>  
-  REACT_APP_FIREBASE_DOMAIN=<authDomain>  
-  REACT_APP_FIREBASE_DATABASE=<databaseURL>  
-  REACT_APP_FIREBASE_PROJECT_ID=<projectId>  
-  REACT_APP_FIREBASE_STORAGE_BUCKET=<storageBucket>  
-  REACT_APP_FIREBASE_SENDER_ID=<messagingSenderId>  
 
-</pre>
-
--  連携するアプリをdistファイルにまとめる
+         // .env  
+      REACT_APP_FIREBASE_KEY=<apiKey>  
+      REACT_APP_FIREBASE_DOMAIN=<authDomain>  
+      REACT_APP_FIREBASE_DATABASE=<databaseURL>  
+      REACT_APP_FIREBASE_PROJECT_ID=<projectId>  
+      REACT_APP_FIREBASE_STORAGE_BUCKET=<storageBucket>  
+      REACT_APP_FIREBASE_SENDER_ID=<messagingSenderId>  
+-  連携するアプリをbuildファイルにまとめる
 
         npm run build  
 -  firebaseとReactのwebアプリの連携を行う
@@ -110,5 +108,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     Hosting URL: https://<app0304.web.app>  
 
 ### "reference"
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).<br>
+To learn React, check out the [React documentation](https://reactjs.org/).<br>
+[参考サイト](https://zenn.dev/takanari_dev/articles/2024-01-29-firebase-web-app)
