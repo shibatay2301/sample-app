@@ -110,4 +110,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### "reference"
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).<br>
 To learn React, check out the [React documentation](https://reactjs.org/).<br>
-[参考サイト](https://zenn.dev/takanari_dev/articles/2024-01-29-firebase-web-app)
+[参考サイト:Firebase (v9) を利用してサクッと React アプリを作って公開する](https://zenn.dev/takanari_dev/articles/2024-01-29-firebase-web-app)
