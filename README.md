@@ -64,7 +64,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   
       npm install react-router-dom firebase   
 - firebaseで作成したアプリのconfig情報を.env内に記載しておく。<>内は各アプリの情報に書き換える
-
+<pre>
       touch .env  
      // .env  
   REACT_APP_FIREBASE_KEY=<apiKey>  
@@ -73,6 +73,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   REACT_APP_FIREBASE_PROJECT_ID=<projectId>  
   REACT_APP_FIREBASE_STORAGE_BUCKET=<storageBucket>  
   REACT_APP_FIREBASE_SENDER_ID=<messagingSenderId>  
+
+</pre>
+
 -  連携するアプリをdistファイルにまとめる
 
         npm run build  
