@@ -1,26 +1,35 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
 ## File tree
 
 <pre>
 .root directory
-├── README.md     //facebook公式のcreate react appのREADMEを含む
-├── dist          //実質的なアプリのページ構成や機能をまとめたもの、本アプリではfirebaseのコンパイル先として使用、reactのversionによってbuildとdistが異なる。Viteを使用した場合はdistが作られる。
-├── firebase.json //firebaseにおけるHostingの規約を記載
-├── firestore.indexes.json
-├── firestore.rules
-├── functions
-├── index.html
-├── node_modules  //npmライブラリ
-├── package\ 2.json
-├── package-lock.json
-├── package.json
-├── public        //一般的にはこのディレクトリをコンパイルする
-├── src           //作業ディレクトリであり、実質的なアプリのページ構成や機能をまとめたもの
-├── tsconfig.json
-├── tsconfig.node.json
-└── vite.config.ts
+├── README.md               //facebook公式のcreate react appのREADMEを含む
+├── dist                    //実質的なアプリのページ構成や機能をまとめたもの、本アプリではfirebaseのコンパイル先として使用、Viteを使用した場合はdistが作られる
+├── firebase.json           //firebaseにおけるHostingの規約を記載
+├── firestore.indexes.json  //firestoreにおけるインデックスの定義方法を記載
+├── firestore.rules         //Firestoreのセキュリティルールを定義するファイル。書き込みなどの制限を記載
+├── functions               //Firebase Cloud Functionsのソースコードや設定ファイルを格納するディレクトリ
+├── index.html              //ReactのエントリーポイントとなるHTMLファイル
+├── node_modules            //npmライブラリ
+├── package.json            //プロジェクトのパッケージのバージョンを記載したjsonファイル
+├── package-lock.json       //プロジェクトの依存関係を固定するためのファイルでパッケージのバージョンに制限をかける
+├── public                  //一般的にはこのディレクトリをコンパイルする
+├── src                     //作業ディレクトリであり、実質的なアプリのページ構成や機能をまとめたもの
+│ ├── App.css               //メインコンポーネントのスタイルシート
+│ ├── App.tsx               //メインコンポーネントの記載ファイル。firebaseとの連携やページ機能について記載されている
+│ ├── assets                //画像ファイルなどを保管しておくディレクトリ
+│ │   └── react.svg         //Reactの画像、デフォルトではReactのマークが入っている
+│ ├── firebaseApp.tsx       //firebaseアプリの初期化とfirestoreへの接続を設定。.envからAPI接続の設定ファイルを呼び出す
+│ ├── index.css             //グローバルスタイルシート
+│ ├── main.tsx              //エントリーポイントとして表示されるファイル。複数ページの場合はrootと表示され、Appの機能などを呼び出す
+│ └── vite-env.d.ts         //Vite用のTypeScript環境設定ファイル
+├── tsconfig.json           //Typescriptの設定ファイル
+├── tsconfig.node.json      //Node.js向けのTypeScriptコンパイラの設定ファイル。サーバーサイドのTypeScriptファイルをコンパイルするための設定を含む
+└── vite.config.ts          //Viteの設定ファイル。Vite のプラグインやビルドオプションを定義する
 </pre>
+
 
 
 ## 手順書
