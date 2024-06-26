@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# cloud firestoreの操作を行うReactアプリ
+# firebase authenticationの確認と複数ページの表示確認Reactアプリ
 ## File tree
 
 <pre>
@@ -95,7 +95,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     ❯◯ Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
   
    →build、singleページではない、github連携なしで進める  
-    ? What do you want to use as your public directory? build  
+    ? What do you want to use as your public directory? dist 
     ? Configure as a single-page app (rewrite all urls to /index.html)? No  
     ? Set up automatic builds and deploys with GitHub? No  
 - deployしてwebアプリにする  
